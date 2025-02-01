@@ -14,9 +14,9 @@ const page = () => {
     { date: "2022-12-01", amount: 520000 },
   ]
   return (
-    <div className="mt-20 border-4 rounded-2xl ">
-      <div className="">
-
+    <div className="p-6">
+      <h1 className="text-2xl font-semibold mb-6">Analytics</h1>
+      <div className="mt-16 border-4 rounded-2xl ">
         <LoanChart
           data={loanData}
           onShare={() => console.log("Share clicked")}
