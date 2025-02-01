@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "../globals.css";
 import { DashboardNav } from "@/components/dashboard-nav";
 import { DashboardHeader } from "@/components/dashboard-header";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased`}
       >
+        <Analytics />
         <div className="min-h-screen flex">
           <div className="w-64 h-screen sticky top-0 left-0 bg-white shadow-md">
             <DashboardNav />
